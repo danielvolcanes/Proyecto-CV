@@ -11,24 +11,73 @@
 
 <body>
 	<header>
-		<svg width="300" height="150" viewBox="0,0,300,150"><image width="300" height="150" xlink:href="imagen/logo.svg"></image></svg>
+		<a href="index.html"><svg width="300" height="150" viewBox="0,0,300,150"><image width="300" height="150" xlink:href="imagen/logo.svg"></image></svg></a>
 		<h1>Curriculum Vitae</h1>
-		<h2>Daniel Alejandro Volcanes D'Eustachio</h2>
-		<h3>23/08/1994</h3>
-		<h3>Mérida - Venezuela</h3>
+		<h2 id="nombre">Daniel Alejandro Volcanes D'Eustachio</h2>
+		<h3 id="fechadenacimiento">23/08/1994</h3>
+		<h3 id="lugardenacimiento">Mérida - Venezuela</h3>
 	</header>
 	<nav>
-		<a href="index.html">Inicio</a> |
-		<a href="educacion.html">Educación</a> |
-		<a href="experiencia.html">Experiencia</a>
+		<a href="index.html" name="enlace a inicio" id="enlaceinicio">Inicio</a> |
+		<a href="educacion.html" name="enlace a educacion" id="enlaceeducacion">Educación</a> |
+		<a href="experiencia.html" name="enlace a experiencia" id="enlaceexperiencia">Experiencia</a>
 	</nav>
-	<section></section>
+	<section>
+	    <h2>Educación</h2>
+		<table border="1" title="educacion" id="tablaeducacion">
+			<thead>
+				<tr>
+				   <th>Año</th>
+				   <th>Institución</th>
+				   <th>Lugar</th>
+				   <th>¿Culminó?</th>
+		        </tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2012</td>
+					<td>Fe y Alegria</td>
+					<td>Merida</td>
+					<td>Culminado</td>
+				</tr>
+				<tr>
+					<td>2018</td>
+					<td>UBA</td>
+					<td>Buenos Aires</td>
+					<td>En curso</td>
+				</tr>
+			</tbody>
+		</table>
+		<form autocomplete="on" name="Agregar estudios">
+			<fieldset>
+				<legend><h3>Agregar Estudios</h3></legend>
+				<label for="año"><strong>Año</strong></label>
+				<select id="año" title="año">
+					<option>2012</option>
+					<option>2013</option>
+					<option>2014</option>
+					<option>2015</option>
+					<option>2016</option>
+					<option>2017</option>
+					<option>2018</option>
+				</select>
+				<br/><br/>
+				<label for="institucion"><strong>Institucion:</strong></label>
+				<input name="institucion" id="institucion" type="text" placeholder="Institucion Sagrado Corazon de Jesus" required>
+				<br/><br/>
+				<label for="lugar"><strong>Lugar</strong></label>
+				<input name="lugar" id="lugar" type="text" placeholder="Lima, Peru">
+				<br/><br/>
+				<input type="submit" id="enviar" value="Enviar">
+			</fieldset>
+		</form>
+	</section>
 	<footer>
 		<h5>Contacto</h5>
 	    <label>Email:</label>
-		<a href="mailto:daniel.vd.23@gmail.com?subject=contacto"> daniel.vd.23@gmail.com</a> |
-	    <a href="https://www.facebook.com/daniel.volcanesdeustachio">Facebook</a> |
-	    <a href="https://twitter.com/DanielVolcanesD">Twitter</a>
+		<a href="mailto:daniel.vd.23@gmail.com?subject=contacto" id="emai"> daniel.vd.23@gmail.com</a> |
+	    <a href="https://www.facebook.com/daniel.volcanesdeustachio" id="facebook">Facebook</a> |
+	    <a href="https://twitter.com/DanielVolcanesD" id="twitter">Twitter</a>
 	</footer>
 </body>
 </html>

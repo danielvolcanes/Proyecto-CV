@@ -11,24 +11,31 @@
 
 <body>
 	<header>
-		<svg width="300" height="150" viewBox="0,0,300,150"><image width="300" height="150" xlink:href="imagen/logo.svg"></image></svg>
+		<a href="index.html"><svg width="300" height="150" viewBox="0,0,300,150"><image width="300" height="150" xlink:href="imagen/logo.svg"></image></svg></a>
 		<h1>Curriculum Vitae</h1>
-		<h2>Daniel Alejandro Volcanes D'Eustachio</h2>
-		<h3>23/08/1994</h3>
-		<h3>Mérida - Venezuela</h3>
+		<h2 id="nombre">Daniel Alejandro Volcanes D'Eustachio</h2>
+		<h3 id="fechadenacimiento">23/08/1994</h3>
+		<h3 id="lugardenacimiento">Mérida - Venezuela</h3>
 	</header>
 	<nav>
-		<a href="index.html">Inicio</a> |
-		<a href="educacion.html">Educación</a> |
-		<a href="experiencia.html">Experiencia</a>
+		<a href="index.html" name="enlace a inicio" id="enlaceinicio">Inicio</a> |
+		<a href="educacion.html" name="enlace a educacion" id="enlaceeducacion">Educación</a> |
+		<a href="experiencia.html" name="enlace a experiencia" id="enlaceexperiencia">Experiencia</a>
 	</nav>
+	<section title="experiencia">
+		<h2>Experiencia</h2>
+		<h3>Habilidades e intereses</h3>
+		<video id="habilidades" title="habilidades" src="video/video.mp4" controls width="300">Su navegador no puede reproducir el video</video>
+		<h3>Hobbies y Actividades recreaticas</h3>
+		<audio id="hobbies" title="hobbies" src="Audio/Hobbies.wav" controls></audio>
+	</section>
 	
-	   <footer>
+	<footer>
 		<h5>Contacto</h5>
 	    <label>Email:</label>
-		<a href="mailto:daniel.vd.23@gmail.com?subject=contacto"> daniel.vd.23@gmail.com</a> |
-	    <a href="https://www.facebook.com/daniel.volcanesdeustachio">Facebook</a> |
-	    <a href="https://twitter.com/DanielVolcanesD">Twitter</a>
+		<a href="mailto:daniel.vd.23@gmail.com?subject=contacto" id="emai"> daniel.vd.23@gmail.com</a> |
+	    <a href="https://www.facebook.com/daniel.volcanesdeustachio" id="facebook">Facebook</a> |
+	    <a href="https://twitter.com/DanielVolcanesD" id="twitter">Twitter</a>
 	</footer>
 	</body>
 </html>
